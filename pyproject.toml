@@ -1,0 +1,18 @@
+[project]
+name = "trimul-lib"
+version = "0.1.0"
+description = "Kernels and modules fortriangular multiplication"
+authors = [{ name = "Tim-Henrik Buelles", email = "thbuelles@gmail.com" }]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+
+dependencies = [
+  "torch>=2.1",
+  "triton>=2.0",
+  "numpy",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
