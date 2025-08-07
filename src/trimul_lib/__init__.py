@@ -1,6 +1,3 @@
-try:
-    from importlib.metadata import version
-except ImportError:
-    from importlib_metadata import version  # For Python <3.8
+from importlib.metadata import version as _version
 
-__version__ = version("trimul-lib")
+__version__ = _version("trimul-lib")
